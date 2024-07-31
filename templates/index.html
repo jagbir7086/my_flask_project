@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <h1>Welcome to The❤️First❤️Journey</h1>
+    <p>Discover our courses and learn at your own pace.</p>
+    <a href="{{ url_for('courses') }}" class="btn">Browse Courses</a>
+</section>
+<section class="features">
+    <h2>
+        Why Choose Us?</h2>
+    <div class="feature-list">
+        <div class="feature">
+            <h3>High-Quality Content</h3>
+            <p>Our courses are designed by experienced experts and cover the latest trends and technologies.</p>
+        </div>
+        <div class="feature">
+            <h3>Flexible Learning</h3>
+            <p>Learn at your own pace with our self-paced courses and flexible schedules.</p>
+        </div>
+        <div class="feature">
+            <h3>Community Support</h3>
+            <p>Join a community of learners and get support from our dedicated mentors and peers.</p>
+        </div>
+    </div>
+</section>
+<section class="courses">
+    <h2>Popular Courses</h2>
+    <ul>
+        <li>Course 1: General Science and General Knowledge</li>
+        <li>Course 2: English</li>
+        <li>Course 3: Reasoning</li>
+        <li>Course 4: Maths</li>
+    </ul>
+</section>
+<section class="teachers">
+    <h2>Meet Our Teachers</h2>
+    <ul>
+        <li>Er. Honey Singh, software Designer</li>
+        <li>Prof. Jagbir Singh, Software Developer</li>
+        <li>Dr. Nitish Kumar, English Expert</li>
+    </ul>
+</section>
+{% endblock %}
